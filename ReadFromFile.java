@@ -52,7 +52,17 @@ public static void main(String[] args) throws FileNotFoundException
             }
         System.out.println();
         }
-        
+         System.out.println("Undirected List: ");
+        for(int i = 0; i<adjMat[0].length;i++){
+            
+            System.out.print(i+" ---> ");
+            int count = 0;
+            for(int j = 0; j<adjMat[1].length;j++){
+                
+               if(adjMat[i][j]==1) count++;
+            }
+        System.out.println(count);
+        }
         
         
         System.out.println("Directed Graph: ");
@@ -75,6 +85,18 @@ public static void main(String[] args) throws FileNotFoundException
             }
         System.out.println();
         }
-        
+        System.out.println("Directed List: ");
+        for(int i = 0; i<adjMatD[0].length;i++){
+            
+            System.out.print(i+" ---> ");
+            int countIn = 0;
+            int countOut = 0;
+            for(int j = 0; j<adjMatD[1].length;j++){
+                
+               if(adjMatD[i][j]==1) countIn++;
+               if(adjMatD[i][j]==1) countIn++;
+            }
+        System.out.println(count);
+        }
 } 
 } 
