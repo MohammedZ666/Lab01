@@ -65,7 +65,7 @@ public static void main(String[] args) throws FileNotFoundException
         System.out.println();
         }
           
-  System.out.println("Directed: ");
+  System.out.println("Directed List: ");
           for(int i = 0; i<adjMatD[0].length;i++){
                         System.out.print(i+" ---> ");
 
